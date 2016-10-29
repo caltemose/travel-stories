@@ -1,3 +1,14 @@
 {
-    "title": "Chad's Stories from Italy"
+    "title": "Chad's Stories from Italy",
+    "slides": [
+        {
+            "image": "images/slides/monteferrante-dad.jpg",
+            "alt": "Monteferrante, Abruzzo, Italy",
+            "text": "My mother's family's hometown in Abruzzo, Italy."
+        }, {
+            "image": "images/slides/ravino-chad-napping.jpg",
+            "alt": "Napping at Ravino Gardens, Ischia, Italy",
+            "text": "Our trip started on the Island of Ischia with some relaxation."
+        }
+    ]
 }

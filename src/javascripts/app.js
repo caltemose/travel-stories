@@ -1,3 +1,10 @@
-import './modules'
+import TravelStories from './modules/TravelStories';
 
-console.log(`app.js has loaded!`)
+const jsonFile = '/travel-stories.json';
+
+let content = document.getElementById('content');
+let controls = document.getElementById('controls');
+let slideshow = document.getElementById('slideshow');
+
+let app = new TravelStories(content, controls, slideshow);
+app.init(jsonFile);

@@ -32,6 +32,7 @@
     "chai": "3.5.0",
     "compression": "1.6.1",
     "del": "2.2.0",
+    "event-emitter-es6": "^1.1.5",
     "express": "4.13.4",
     "gulp": "3.9.1",
     "gulp-autoprefixer": "3.1.0",
