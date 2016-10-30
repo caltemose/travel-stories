@@ -1,0 +1,103 @@
+{
+    "title": "A Few Shots from Italy",
+    "slides": [
+        {
+            "image": "images/italy-highlights/agave-attenuata.jpg",
+            "alt": "Agave Attenuata",
+            "text": "Agave Attenuata at Ravino Gardens, Ischia, Italy",
+            "theme": "dark",
+            "position": "bottom"
+        },
+        {
+            "image": "images/italy-highlights/little-water-plants.jpg",
+            "alt": "Water plants - Rome Botanical Gardens",
+            "text": "Water plants at the Botanical Gardens in Rome",
+            "theme": "dark",
+            "position": "bottom"
+        },
+        {
+            "image": "images/italy-highlights/pineapple-bark.jpg",
+            "alt": "Pineapple-like bar",
+            "text": "Interesting palm bark at Ravino Gardens, Ischia, Italy",
+            "theme": "dark",
+            "position": "bottom"
+        },
+        {
+            "image": "images/italy-highlights/translucent-plants.jpg",
+            "alt": "Translucent Succulents",
+            "text": "Translucent succulents at the Botanical Gardens in Rome",
+            "theme": "dark",
+            "position": "bottom"
+        },
+        {
+            "image": "images/italy-highlights/artichoke-like-flowers.jpg",
+            "alt": "Green flowers",
+            "text": "Artichoke-like blossoms at the botanical gardens (Palermo or Rome)",
+            "theme": "dark",
+            "position": "bottom"
+        },
+        {
+            "image": "images/italy-highlights/red-cactus-flowers.jpg",
+            "alt": "Flowering cactus",
+            "text": "Flowering cactus at Ravino Botanical Gardens, Ischia, Italy",
+            "theme": "dark",
+            "position": "bottom"
+        },
+        {
+            "image": "images/italy-highlights/fuzzy-white-cactus.jpg",
+            "alt": "Fuzzy white cactus",
+            "text": "Fuzzy white cactus at the Botanical Gardens in Rome",
+            "theme": "dark",
+            "position": "bottom"
+        },
+        {
+            "image": "images/italy-highlights/porcini.jpg",
+            "alt": "Porcini mushrooms",
+            "text": "Porcini mushrooms at the market in Rome",
+            "theme": "dark",
+            "position": "bottom"
+        },
+        {
+            "image": "images/italy-highlights/roccascalegna.jpg",
+            "alt": "Roccascalegna, Abruzzo, Italy",
+            "text": "Roccascalegna in the province of Chieti, Abruzzo, Italy",
+            "theme": "dark",
+            "position": "bottom"
+        },
+        {
+            "image": "images/italy-highlights/taormina-sunny-afternoon.jpg",
+            "alt": "Taormina Sunny Hillside",
+            "text": "Afternoon looking toward Mt. Etna from Taormina, Siciliy, Italy",
+            "theme": "dark",
+            "position": "bottom"
+        },
+        {
+            "image": "images/italy-highlights/sicily-tan-hillside.jpg",
+            "alt": "Sicilian landscape",
+            "text": "The hillside driving through the middle of Sicily, Italy",
+            "theme": "dark",
+            "position": "bottom"
+        },
+        {
+            "image": "images/italy-highlights/gangi.jpg",
+            "alt": "Gangi, Sicily, Italy",
+            "text": "Looking toward the town of Gangi in Sicily",
+            "theme": "dark",
+            "position": "bottom"
+        },
+        {
+            "image": "images/italy-highlights/gangi-hillside.jpg",
+            "alt": "Gangi Hillside",
+            "text": "Looking down the hillside landscape from Gangi, Italy",
+            "theme": "dark",
+            "position": "bottom"
+        },
+        {
+            "image": "images/italy-highlights/rome-building-tops.jpg",
+            "alt": "Buildings in Rome",
+            "text": "",
+            "theme": "dark",
+            "position": "bottom"
+        }
+    ]
+}

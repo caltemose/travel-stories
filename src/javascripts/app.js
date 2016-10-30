@@ -1,6 +1,6 @@
 import TravelStories from './modules/TravelStories';
 
-const jsonFile = '/travel-stories.json';
+const jsonFile = '/italy-highlights.json';
 
 let content = document.getElementById('content');
 let controls = document.getElementById('controls');

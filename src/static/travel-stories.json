@@ -4,11 +4,24 @@
         {
             "image": "images/slides/monteferrante-dad.jpg",
             "alt": "Monteferrante, Abruzzo, Italy",
-            "text": "My mother's family's hometown in Abruzzo, Italy."
+            "text": "My mother's family's hometown in Abruzzo, Italy.",
+            "theme": "light",
+            "position": "bottom"
         }, {
             "image": "images/slides/ravino-chad-napping.jpg",
             "alt": "Napping at Ravino Gardens, Ischia, Italy",
-            "text": "Our trip started on the Island of Ischia with some relaxation."
+            "text": "Our trip started on the Island of Ischia with some relaxation.",
+            "theme": "dark"
+        }, {
+            "image": "images/slides/ravino-cafe.jpg",
+            "alt": "The caffé at Ravino Gardens, Ischia, Italy",
+            "text": "The caffé at Ravino is a great place for breakfast, a snack or a drink",
+            "theme": "dark"
+        }, {
+            "image": "images/slides/poseidon.jpg",
+            "alt": "Poseidon Thermal Baths, Ischia, Italy",
+            "text": "The Poseidon Thermal Baths are a great place to spend the day relaxing.",
+            "theme": "dark"
         }
     ]
 }

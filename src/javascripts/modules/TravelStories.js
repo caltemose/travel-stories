@@ -31,32 +31,8 @@ export default class TravelStories extends Emitter {
     buildElements () {
         // create controls
         this.showControls = new ShowControls(this.childrenElements.controls)
-        this.showControls.on(PREV, () => this.changeSlide(-1))
-        this.showControls.on(NEXT, () => this.changeSlide(1))
-
         // create slides
-        this.slides = new Slides(this, this.childrenElements.slideshow, this.jsonData.slides)
-
-    }
-
-    changeSlide (dir) {
-        console.log('changeSlide', dir)
+        this.slides = new Slides(this, this.childrenElements.slideshow, this.jsonData.slides, this.showControls)
     }
 
 }
-
-/*
-
-This component needs to create:
-
-- controls (visual UI and keyboard control)
-
-- slides
-    - slide
-        - svg
-        - text
-        - image
-
-- timing/sequencing controller
-
-*/
