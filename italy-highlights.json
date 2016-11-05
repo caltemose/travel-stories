@@ -98,6 +98,55 @@
             "text": "",
             "theme": "dark",
             "position": "bottom"
+        },
+        {
+            "image": "images/italy-highlights/rome-column-ruins.jpg",
+            "alt": "Ruins in Rome",
+            "text": "Ruins in Rome",
+            "theme": "dark",
+            "position": "bottom"
+        },
+        {
+            "image": "images/italy-highlights/michelangelo-ceiling.jpg",
+            "alt": "Basilica Ceiling by Michelangelo in Rome",
+            "text": "Basilica Ceiling by Michelangelo in Rome",
+            "theme": "dark",
+            "position": "bottom"
+        },
+        {
+            "image": "images/italy-highlights/john-the-baptist-head.jpg",
+            "alt": "John the Baptist's head in a basilica in Rome",
+            "text": "John the Baptist's Head in a basilica in Rome",
+            "theme": "dark",
+            "position": "bottom"
+        },
+        {
+            "image": "images/italy-highlights/galileo.jpg",
+            "alt": "A statue of Galileo in Rome, donated by the Chinese",
+            "text": "A statue of Galileo in Rome, donated by the Chinese",
+            "theme": "dark",
+            "position": "bottom"
+        },
+        {
+            "image": "images/italy-highlights/ischia-chapel.jpg",
+            "alt": "A chapel in Ischia, Italy",
+            "text": "A chapel in Ischia, Italy",
+            "theme": "dark",
+            "position": "bottom"
+        },
+        {
+            "image": "images/italy-highlights/basilica-gold-ceiling.jpg",
+            "alt": "Golden basilica ceiling in Rome",
+            "text": "Golden basilica ceiling in Rome",
+            "theme": "dark",
+            "position": "bottom"
+        },
+        {
+            "image": "images/italy-highlights/basilica-tile-pattern.jpg",
+            "alt": "Tile pattern in a basilica in Rome",
+            "text": "Tile pattern in a basilica in Rome",
+            "theme": "dark",
+            "position": "bottom"
         }
     ]
 }
