@@ -1,4 +1,5 @@
 module.exports = {
     PREV: 'prev',
-    NEXT: 'next'
+    NEXT: 'next',
+    RESET: 'reset'
 }

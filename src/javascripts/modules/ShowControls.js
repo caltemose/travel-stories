@@ -28,6 +28,8 @@ export default class ShowControls extends Emitter {
         this.next = document.getElementById('next')
         this.prev.addEventListener('click', evt => this.onPrevClick(evt))
         this.next.addEventListener('click', evt => this.onNextClick(evt))
+
+        window.addEventListener('keydown', evt => this.onKeyDown(evt))
     }
 
     onPrevClick () {
@@ -36,6 +38,24 @@ export default class ShowControls extends Emitter {
 
     onNextClick () {
         this.emit(NEXT)
+    }
+
+    onKeyDown (e) {
+        switch (e.keyCode) {
+            case 48:
+                this.emit(RESET)
+                break
+            case 412:
+            case 49:
+                this.onPrevClick()
+                break
+            case 417:
+            case 50:
+                this.onNextClick()
+                break
+            default:
+                break
+        }
     }
 
 }
