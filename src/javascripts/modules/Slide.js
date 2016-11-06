@@ -1,8 +1,9 @@
-import { PREV, NEXT } from './constants'
+import { PREV, NEXT, HIDE_VALUE, SHOW_VALUE } from './constants'
 
 export default class Slide {
 
-    constructor (data, parentElement, showOnRender) {
+    constructor (parent, data, parentElement, showOnRender) {
+        this.parent = parent
         this.data = data
         this.visible = showOnRender
         this.parentElement = parentElement
@@ -32,15 +33,26 @@ export default class Slide {
 
     show () {
         this.slide.className = this.defaultClasses
+        if (this.parent.captionsShown) {
+            this.showCaption()
+        } else {
+            this.hideCaption()
+        }
     }
 
     toggleCaption () {
-        const HIDE = 'none'
-        const SHOW = 'block'
-        if (this.caption.style.display === HIDE) {
-            this.caption.style.display = SHOW
+        if (this.caption.style.display === HIDE_VALUE) {
+            this.showCaption()
         } else {
-            this.caption.style.display = HIDE
+            this.hideCaption()
         }
+    }
+
+    showCaption () {
+        this.caption.style.display = SHOW_VALUE
+    }
+
+    hideCaption () {
+        this.caption.style.display = HIDE_VALUE
     }
 }

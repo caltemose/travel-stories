@@ -10,6 +10,7 @@ export default class Slides {
         this.slides = []
         this.currentSlide = 0
         this.slideToRender = 0
+        this.captionsShown = true
         this.render()
         this.keyMapper = keyMapper
         this.initKeyMapper()
@@ -56,11 +57,12 @@ export default class Slides {
     }
 
     toggleCaption () {
+        this.captionsShown = !this.captionsShown
         this.slides[this.currentSlide].toggleCaption()
     }
 
     renderSlide (indx) {
-        let slide = new Slide(this.slideData[indx], this.listElement, indx===this.currentSlide ? true : false)
+        let slide = new Slide(this, this.slideData[indx], this.listElement, indx===this.currentSlide ? true : false)
         this.slides.push(slide)
         this.renderNextSlide()
     }
