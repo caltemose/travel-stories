@@ -2,12 +2,25 @@ import axios from 'axios'
 import ShowControls  from './ShowControls'
 import Slides from './Slides'
 import KeyboardMapper from './KeyboardMapper'
-import { PREV, NEXT, RESET, TOGGLE_UI, TOGGLE_CAPTION } from './constants'
 
+/**
+ * TravelStories is the primary class for this application.
+ * It loads the JSON data and creates the primary components
+ * for this app.
+ */
 export default class TravelStories {
 
-    constructor (content, controls, slideshow) {
+    /**
+     * constructor - receives and stores the DOM containers
+     * that will house the primary components for this app.
+     *
+     * @param  {DOMnode} controls  DOM element for the control UI
+     * @param  {DOMnode} slideshow DOM element for the slides
+     * @return null
+     */
+    constructor (controls, slideshow) {
         this.element = controls
+        this.captionsShown = false
         this.childrenElements = {
             controls: controls,
             slideshow: slideshow
@@ -16,6 +29,7 @@ export default class TravelStories {
 
     /**
      * init - load the slideshow json file via GET
+     *
      * @param  {string} jsonFile path to the slideshow JSON data
      * @return null
      */

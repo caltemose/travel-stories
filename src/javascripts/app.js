@@ -1,10 +1,13 @@
-import TravelStories from './modules/TravelStories';
+import TravelStories from './modules/TravelStories'
 
-const jsonFile = './italy-highlights.json';
+let content = document.getElementById('content')
+let json = './italy-highlights.json'
+if (content.dataset.jsonSrc) {
+    json = content.dataset.jsonSrc
+}
 
-let content = document.getElementById('content');
-let controls = document.getElementById('controls');
-let slideshow = document.getElementById('slideshow');
+let controls = document.getElementById('controls')
+let slideshow = document.getElementById('slideshow')
 
-let app = new TravelStories(content, controls, slideshow);
-app.init(jsonFile);
+let app = new TravelStories(controls, slideshow)
+app.init(json)

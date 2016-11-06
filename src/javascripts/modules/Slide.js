@@ -34,7 +34,7 @@ export default class Slide {
         this.slide.className = this.defaultClasses
     }
 
-    hideCaption () {
+    toggleCaption () {
         const HIDE = 'none'
         const SHOW = 'block'
         if (this.caption.style.display === HIDE) {

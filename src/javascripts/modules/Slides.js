@@ -56,7 +56,7 @@ export default class Slides {
     }
 
     toggleCaption () {
-        this.slides[this.currentSlide].hideCaption()
+        this.slides[this.currentSlide].toggleCaption()
     }
 
     renderSlide (indx) {
