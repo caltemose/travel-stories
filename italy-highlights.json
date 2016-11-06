@@ -10,8 +10,8 @@
         },
         {
             "image": "images/italy-highlights/little-water-plants.jpg",
-            "alt": "Water plants - Rome Botanical Gardens",
-            "text": "Water plants at the Botanical Gardens in Rome",
+            "alt": "Water plants - Palermo Botanical Gardens",
+            "text": "Water plants at the Botanical Gardens in Palermo",
             "theme": "dark",
             "position": "bottom"
         },
@@ -25,14 +25,14 @@
         {
             "image": "images/italy-highlights/translucent-plants.jpg",
             "alt": "Translucent Succulents",
-            "text": "Translucent succulents at the Botanical Gardens in Rome",
+            "text": "Translucent succulents at the Botanical Gardens in Palermo",
             "theme": "dark",
             "position": "bottom"
         },
         {
             "image": "images/italy-highlights/artichoke-like-flowers.jpg",
             "alt": "Green flowers",
-            "text": "Artichoke-like blossoms at the botanical gardens (Palermo or Rome)",
+            "text": "Artichoke-like blossoms at the botanical gardens in Palermo.",
             "theme": "dark",
             "position": "bottom"
         },
@@ -46,7 +46,7 @@
         {
             "image": "images/italy-highlights/fuzzy-white-cactus.jpg",
             "alt": "Fuzzy white cactus",
-            "text": "Fuzzy white cactus at the Botanical Gardens in Rome",
+            "text": "Fuzzy white cactus at Ravino Botanical Gardens, Ischia, Italy",
             "theme": "dark",
             "position": "bottom"
         },
@@ -61,14 +61,14 @@
             "image": "images/italy-highlights/roccascalegna.jpg",
             "alt": "Roccascalegna, Abruzzo, Italy",
             "text": "Roccascalegna in the province of Chieti, Abruzzo, Italy",
-            "theme": "dark",
+            "theme": "light",
             "position": "bottom"
         },
         {
             "image": "images/italy-highlights/taormina-sunny-afternoon.jpg",
             "alt": "Taormina Sunny Hillside",
             "text": "Afternoon looking toward Mt. Etna from Taormina, Siciliy, Italy",
-            "theme": "dark",
+            "theme": "light",
             "position": "bottom"
         },
         {
