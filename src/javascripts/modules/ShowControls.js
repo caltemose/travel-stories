@@ -1,5 +1,5 @@
 import Emitter from 'event-emitter-es6'
-import { PREV, NEXT, RESET, TOGGLE_UI, TOGGLE_CAPTION } from './constants'
+import { PREV, NEXT, RESET, TOGGLE_UI, TOGGLE_CAPTION, HIDE_VALUE, SHOW_VALUE } from './constants'
 import KeyboardMapper from './KeyboardMapper'
 
 export default class ShowControls extends Emitter {
@@ -16,6 +16,7 @@ export default class ShowControls extends Emitter {
         this.element.innerHTML = markup;
         this.initButtons()
         this.initKeyMapper()
+        this.toggleVisibility({})
     }
 
     getMarkup () {
@@ -45,12 +46,10 @@ export default class ShowControls extends Emitter {
     }
 
     toggleVisibility (e) {
-        const HIDE = 'none'
-        const SHOW = 'block'
-        if (this.element.style.display === HIDE) {
-            this.element.style.display = SHOW
+        if (this.element.style.display === HIDE_VALUE) {
+            this.element.style.display = SHOW_VALUE
         } else {
-            this.element.style.display = HIDE
+            this.element.style.display = HIDE_VALUE
         }
     }
 
