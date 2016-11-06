@@ -1,12 +1,13 @@
 import Emitter from 'event-emitter-es6'
-import { PREV, NEXT } from './constants'
+import { PREV, NEXT, RESET, TOGGLE_UI, TOGGLE_CAPTION } from './constants'
+import KeyboardMapper from './KeyboardMapper'
 
 export default class ShowControls extends Emitter {
 
-    constructor (el) {
+    constructor (el, keyMapper) {
         super()
-        console.log("ShowControls constructor")
         this.element = el
+        this.keyMapper = keyMapper
         this.render()
     }
 
@@ -14,6 +15,7 @@ export default class ShowControls extends Emitter {
         var markup = this.getMarkup()
         this.element.innerHTML = markup;
         this.initButtons()
+        this.initKeyMapper()
     }
 
     getMarkup () {
@@ -28,8 +30,10 @@ export default class ShowControls extends Emitter {
         this.next = document.getElementById('next')
         this.prev.addEventListener('click', evt => this.onPrevClick(evt))
         this.next.addEventListener('click', evt => this.onNextClick(evt))
+    }
 
-        window.addEventListener('keydown', evt => this.onKeyDown(evt))
+    initKeyMapper () {
+        this.keyMapper.on(TOGGLE_UI, evt => this.toggleVisibility())
     }
 
     onPrevClick () {
@@ -40,21 +44,13 @@ export default class ShowControls extends Emitter {
         this.emit(NEXT)
     }
 
-    onKeyDown (e) {
-        switch (e.keyCode) {
-            case 48:
-                this.emit(RESET)
-                break
-            case 412:
-            case 49:
-                this.onPrevClick()
-                break
-            case 417:
-            case 50:
-                this.onNextClick()
-                break
-            default:
-                break
+    toggleVisibility (e) {
+        const HIDE = 'none'
+        const SHOW = 'block'
+        if (this.element.style.display === HIDE) {
+            this.element.style.display = SHOW
+        } else {
+            this.element.style.display = HIDE
         }
     }
 

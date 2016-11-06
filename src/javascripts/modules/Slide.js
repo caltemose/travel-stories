@@ -1,10 +1,8 @@
-import Emitter from 'event-emitter-es6'
 import { PREV, NEXT } from './constants'
 
-export default class Slide extends Emitter {
+export default class Slide {
 
     constructor (data, parentElement, showOnRender) {
-        super()
         this.data = data
         this.visible = showOnRender
         this.parentElement = parentElement
@@ -25,6 +23,7 @@ export default class Slide extends Emitter {
         this.slide.innerHTML = html
         this.slide.className = classes
         this.parentElement.appendChild(this.slide)
+        this.caption = this.slide.querySelector('h2')
     }
 
     hide () {
@@ -33,5 +32,15 @@ export default class Slide extends Emitter {
 
     show () {
         this.slide.className = this.defaultClasses
+    }
+
+    hideCaption () {
+        const HIDE = 'none'
+        const SHOW = 'block'
+        if (this.caption.style.display === HIDE) {
+            this.caption.style.display = SHOW
+        } else {
+            this.caption.style.display = HIDE
+        }
     }
 }

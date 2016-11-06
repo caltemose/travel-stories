@@ -1,11 +1,9 @@
-import Emitter from 'event-emitter-es6'
 import Slide from './Slide'
-import { PREV, NEXT } from './constants'
+import { PREV, NEXT, RESET, TOGGLE_UI, TOGGLE_CAPTION } from './constants'
 
-export default class Slides extends Emitter {
+export default class Slides {
 
-    constructor (parent, el, slideData, controls) {
-        super()
+    constructor (parent, el, slideData, controls, keyMapper) {
         this.parent = parent
         this.element = el
         this.slideData = slideData
@@ -13,8 +11,29 @@ export default class Slides extends Emitter {
         this.currentSlide = 0
         this.slideToRender = 0
         this.render()
+        this.keyMapper = keyMapper
+        this.initKeyMapper()
+
         controls.on(PREV, (e) => this.changeSlides(-1))
         controls.on(NEXT, (e) => this.changeSlides(1))
+    }
+
+    onPrevClick () {
+        this.changeSlides(-1)
+    }
+
+    onNextClick () {
+        this.changeSlides(1)
+    }
+
+    onReset () {
+
+    }
+
+    initKeyMapper () {
+        this.keyMapper.on(PREV, () => this.onPrevClick())
+        this.keyMapper.on(NEXT, () => this.onNextClick())
+        this.keyMapper.on(TOGGLE_CAPTION, () => this.toggleCaption())
     }
 
     render () {
@@ -34,6 +53,10 @@ export default class Slides extends Emitter {
             this.slideToRender++
             this.renderSlide(this.slideToRender)
         }
+    }
+
+    toggleCaption () {
+        this.slides[this.currentSlide].hideCaption()
     }
 
     renderSlide (indx) {
