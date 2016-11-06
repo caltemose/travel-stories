@@ -17,8 +17,11 @@ export default class Slide {
             classes += ' hidden'
         }
 
-        let html = `<h2>${this.data.text}</h2>
-            <img src="${this.data.image}" alt="${this.data.alt}" />`
+        let html = '';
+        if (this.data.text) {
+            html = `<h2>${this.data.text}</h2>`
+        }
+        html += `<img src="${this.data.image}" alt="${this.data.alt}" />`
 
         this.slide = document.createElement('li')
         this.slide.innerHTML = html
@@ -41,18 +44,24 @@ export default class Slide {
     }
 
     toggleCaption () {
-        if (this.caption.style.display === HIDE_VALUE) {
-            this.showCaption()
-        } else {
-            this.hideCaption()
+        if (this.caption) {
+            if (this.caption.style.display === HIDE_VALUE) {
+                this.showCaption()
+            } else {
+                this.hideCaption()
+            }
         }
     }
 
     showCaption () {
-        this.caption.style.display = SHOW_VALUE
+        if (this.caption) {
+            this.caption.style.display = SHOW_VALUE
+        }
     }
 
     hideCaption () {
-        this.caption.style.display = HIDE_VALUE
+        if (this.caption) {
+            this.caption.style.display = HIDE_VALUE
+        }
     }
 }
