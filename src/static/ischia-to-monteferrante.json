@@ -1,0 +1,82 @@
+{
+    "title": "From Ischia to Monteferrante",
+    "slides": [
+        {
+            "image": "images/ischia-monteferrante/ischia-beach.jpg",
+            "alt": "The beach at Forio, Ischia",
+            "text": "The beach at Forio, Ischia, Italy",
+            "theme": "dark",
+            "position": "bottom"
+        },
+        {
+            "image": "images/ischia-monteferrante/botanical-gardens-cacti.jpg",
+            "alt": "Ravino Botanical Gardens at Forio, Ischia",
+            "text": "Ravino Botanical Gardens at Forio, Ischia, Italy",
+            "theme": "dark",
+            "position": "bottom"
+        },
+        {
+            "image": "images/ischia-monteferrante/botanical-gardens-cafe.jpg",
+            "alt": "Ravino Botanical Gardens Caffé at Forio, Ischia",
+            "text": "Ravino Botanical Gardens Caffé at Forio, Ischia, Italy",
+            "theme": "dark",
+            "position": "bottom"
+        },
+        {
+            "image": "images/ischia-monteferrante/abruzzo-drive-lunch.jpg",
+            "alt": "View from the Restaurant into the Abruzzo Hills",
+            "text": "View from the Restaurant into the Abruzzo Hills",
+            "theme": "dark",
+            "position": "bottom"
+        },
+        {
+            "image": "images/ischia-monteferrante/abruzzo-drive-lunch.jpg",
+            "alt": "View from the Restaurant into the Abruzzo Hills",
+            "text": "View from the Restaurant into the Abruzzo Hills",
+            "theme": "dark",
+            "position": "bottom"
+        },
+        {
+            "image": "images/ischia-monteferrante/monteferrante-into-valley.jpg",
+            "alt": "Monteferrante on the hill",
+            "text": "Monteferrante on the hill",
+            "theme": "dark",
+            "position": "bottom"
+        },
+        {
+            "image": "images/ischia-monteferrante/monteferrante-top.jpg",
+            "alt": "View down the main street of Monteferrante",
+            "text": "View down the main street of Monteferrante",
+            "theme": "dark",
+            "position": "bottom"
+        },
+        {
+            "image": "images/ischia-monteferrante/monteferrante-street.jpg",
+            "alt": "View down the main street of Monteferrante",
+            "text": "View down the main street of Monteferrante",
+            "theme": "dark",
+            "position": "bottom"
+        },
+        {
+            "image": "images/ischia-monteferrante/lago-di-bomba.jpg",
+            "alt": "Lago di Bomba, Abruzzo, Italy",
+            "text": "Looking down to Lago di Bomba from Monteferrante",
+            "theme": "dark",
+            "position": "bottom"
+        },
+        {
+            "image": "images/ischia-monteferrante/dads-party.jpg",
+            "alt": "Dad's Party in the Restaurant Below Adolfo's",
+            "text": "Dad's Party in the Restaurant Below Adolfo's",
+            "theme": "dark",
+            "position": "bottom"
+        },
+        {
+            "image": "images/ischia-monteferrante/tornareccio-square.jpg",
+            "alt": "Tornareccio, Chieti, Italy",
+            "text": "The nearby town of Tornareccio",
+            "theme": "dark",
+            "position": "bottom"
+        }
+    ]
+}
