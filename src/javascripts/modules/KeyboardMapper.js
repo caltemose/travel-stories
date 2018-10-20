@@ -1,6 +1,6 @@
 import Emitter from 'event-emitter-es6'
 import ShowControls from './ShowControls'
-import { PREV, NEXT, RESET, TOGGLE_UI, TOGGLE_CAPTION } from './constants'
+import { PREV, NEXT, RESET, TOGGLE_UI, TOGGLE_CAPTION, TOGGLE_SLIDESHOW } from './constants'
 
 /**
  * KeyboardMapper listens to global keydown events and broadcasts
@@ -10,7 +10,7 @@ export default class KeyboardMapper extends Emitter {
 
     /**
      * constructor - attaches the keydown listener to the window object.
-     * 
+     *
      * @return null
      */
     constructor () {
@@ -26,7 +26,11 @@ export default class KeyboardMapper extends Emitter {
      * @return null
      */
     onKeyDown (e) {
+        console.log(e.keyCode)
         switch (e.keyCode) {
+            case 32:
+                this.emit(TOGGLE_SLIDESHOW)
+                break
             case 48: // 0
                 this.emit(RESET)
                 break

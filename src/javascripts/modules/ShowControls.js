@@ -1,5 +1,5 @@
 import Emitter from 'event-emitter-es6'
-import { PREV, NEXT, RESET, TOGGLE_UI, TOGGLE_CAPTION, HIDE_VALUE, SHOW_VALUE } from './constants'
+import { PREV, NEXT, RESET, TOGGLE_UI, TOGGLE_CAPTION, HIDE_VALUE, SHOW_VALUE, TOGGLE_SLIDESHOW } from './constants'
 import KeyboardMapper from './KeyboardMapper'
 
 export default class ShowControls extends Emitter {
@@ -17,6 +17,21 @@ export default class ShowControls extends Emitter {
         this.initButtons()
         this.initKeyMapper()
         this.toggleVisibility({})
+        this.startShow()
+    }
+
+    startShow () {
+        this.intervalId = setInterval(this.onNextClick.bind(this), 10 * 1000)
+    }
+
+    stopShow () {
+        clearInterval(this.intervalId)
+        this.intervalId = null
+    }
+
+    toggleShow () {
+        if (this.intervalId) this.stopShow()
+        else this.startShow()
     }
 
     getMarkup () {
@@ -35,6 +50,7 @@ export default class ShowControls extends Emitter {
 
     initKeyMapper () {
         this.keyMapper.on(TOGGLE_UI, evt => this.toggleVisibility())
+        this.keyMapper.on(TOGGLE_SLIDESHOW, evt => this.toggleShow())
     }
 
     onPrevClick () {
