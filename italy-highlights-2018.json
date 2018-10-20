@@ -1,0 +1,68 @@
+{
+    "title": "Italy Highlights 2018",
+    "slides": [
+        {
+            "image": "images/italy-2018/monteferrante-on-hill.jpg",
+            "alt": "Monteferrante",
+            "text": "Home: Monteferrante, Chieti Province, Abruzzo, Italy",
+            "theme": "dark"
+        },
+        {
+            "image": "images/italy-2018/monteferrante-pano-to-majella.jpg",
+            "alt": "Monteferrante toward La Majella",
+            "text": "From Monteferrante looking toward La Majella and Rome",
+            "theme": "dark",
+            "mode": "pano"
+        },
+        {
+            "image": "images/italy-2018/hills-past-roio.jpg",
+            "alt": "Abruzzo Hills Near Roio",
+            "text": "Abruzzo Hills Near Roio",
+            "theme": "dark"
+        },
+        {
+            "image": "images/italy-2018/abruzzo-gentle-hills.jpg",
+            "alt": "Abruzzo Hills",
+            "text": "The gentle hills in Abruzzo",
+            "theme": "dark"
+        },
+        {
+            "image": "images/italy-2018/on-the-way-to-tornareccio.jpg",
+            "alt": "The hills on the drive to Tornareccio",
+            "text": "The hills on the drive to Tornareccio",
+            "theme": "dark"
+        },
+        {
+            "image": "images/italy-2018/tornareccio-wall-of-3.jpg",
+            "alt": "Mosaics in Tornareccio",
+            "text": "Mosaics in Tornareccio",
+            "theme": "dark"
+        },
+        {
+            "image": "images/italy-2018/tornareccio-mosaic-topple.jpg",
+            "alt": "A mosaic in Tornareccio by Lucio Trojano",
+            "text": "A mosaic in Tornareccio by Lucio Trojano",
+            "theme": "dark"
+        },
+        {
+            "image": "images/italy-2018/caseficio-flo.jpg",
+            "alt": "Cheese from Caseficio Flo near Tornareccio",
+            "text": "Cheese from Caseficio Flo near Tornareccio",
+            "theme": "dark"
+        },
+        {
+            "image": "images/italy-2018/caper-plant.jpg",
+            "alt": "A caper flower",
+            "text": "A caper plant with flower",
+            "theme": "dark",
+            "mode": "portrait"
+        },
+        {
+            "image": "images/italy-2018/modern-struggles.jpg",
+            "alt": "Modern Struggles - Graffiti",
+            "text": "Modern Struggles - Graffiti",
+            "theme": "dark",
+            "mode": "portrait"
+        }
+    ]
+}
