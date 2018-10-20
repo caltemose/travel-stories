@@ -7,7 +7,10 @@ export default class Slide {
         this.data = data
         this.visible = showOnRender
         this.parentElement = parentElement
-        this.defaultClasses = 'slide theme-' + this.data.theme;
+        this.defaultClasses = 'slide theme-' + this.data.theme
+        if (this.data.mode) {
+            this.defaultClasses += ' ' + this.data.mode
+        }
         this.render()
     }
 

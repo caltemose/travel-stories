@@ -17,7 +17,7 @@ export default class ShowControls extends Emitter {
         this.initButtons()
         this.initKeyMapper()
         this.toggleVisibility({})
-        this.startShow()
+        // this.startShow()
     }
 
     startShow () {
